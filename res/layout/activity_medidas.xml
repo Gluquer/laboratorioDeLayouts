@@ -136,7 +136,7 @@
             android:layout_alignLeft="@+id/textView11"
             android:layout_alignRight="@+id/textView11"
             android:layout_below="@+id/textView11"
-            android:text="TextView" />
+            android:text=" " />
 
         <TextView
             android:id="@+id/textView14"
@@ -173,7 +173,7 @@
             android:layout_alignLeft="@+id/textView15"
             android:layout_alignRight="@+id/textView15"
             android:layout_below="@+id/textView15"
-            android:text="TextView" />
+            android:text=" " />
 
         <TextView
             android:id="@+id/textView18"

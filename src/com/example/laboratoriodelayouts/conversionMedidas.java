@@ -27,7 +27,7 @@ public class conversionMedidas extends Activity{
         pDato = (EditText)findViewById(R.id.acceso);
         opciones = (Spinner)findViewById(R.id.spinner1);
         
-        String[] unidades={"mm","cm","dm","m","inch","inch (1/n)","ft","ft in","yd","mile","km"};
+        String[] unidades={"mm","cm","dm","m","inch","ft","yd","mile","km"};
         ArrayAdapter<String> ad=new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,unidades);
         opciones.setAdapter(ad);
         
@@ -62,21 +62,15 @@ public class conversionMedidas extends Activity{
         	dat=dat/39.370079;
         	break;
         case 5:
-        	dat=dat/39.370079;
+        	dat=dat/3.28084;
         	break;
         case 6:
-        	dat=dat/3.28084;
-        	break;
-        case 7:
-        	dat=dat/3.28084;
-        	break;
-        case 8:
         	dat=dat/1.093613;
         	break;
-        case 9:
+        case 7:
         	dat=dat/0.000621;
         	break;
-        case 10:
+        case 8:
         	dat=dat/0.001;
         	break;
         }
@@ -91,12 +85,12 @@ public class conversionMedidas extends Activity{
         t9.setText(formato.format((double)(dat*uni[3]))+"");
         TextView t11=(TextView)findViewById(R.id.textView11);
         t11.setText(formato.format((double)(dat*uni[4]))+"");
-        TextView t13=(TextView)findViewById(R.id.textView13);
-        t13.setText(formato.format((double)(dat*uni[5]))+"");
+        //TextView t13=(TextView)findViewById(R.id.textView13);
+        //t13.setText(formato.format((double)(dat*uni[5]))+"");
         TextView t15=(TextView)findViewById(R.id.textView15);
         t15.setText(formato.format((double)(dat*uni[6]))+"");
-        TextView t17=(TextView)findViewById(R.id.textView17);
-        t17.setText(formato.format((double)(dat*uni[7]))+"");
+        //TextView t17=(TextView)findViewById(R.id.textView17);
+        //t17.setText(formato.format((double)(dat*uni[7]))+"");
         TextView t19=(TextView)findViewById(R.id.textView19);
         t19.setText(formato.format((double)(dat*uni[8]))+"");
         TextView t21=(TextView)findViewById(R.id.textView21);
